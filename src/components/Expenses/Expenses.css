@@ -1,0 +1,15 @@
+.exp-item-description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: center;
+}
