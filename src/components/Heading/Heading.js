@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Heading = (props) => {
+const Heading = ({hType,text}) => {
+   console.log("hType === ",hType);
   return (
     <>
-        <h1>{props.title}</h1>
+        <h1>{"Heading component" + text}</h1>
     </>
   )
 }
