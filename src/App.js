@@ -35,7 +35,7 @@ import Sheet from '@mui/joy/Sheet';
 import Grid from '@mui/joy/Grid';
 
 import ResponsiveAppBar from './components/ResponsiveAppBar/ResponsiveAppBar';
-
+import SimpleBottomNavigation from './components/SimpleBottomNavigation/SimpleBottomNavigation';
 const Item = styled(Sheet)(({ theme }) => ({
   backgroundColor:
     theme.palette.mode === 'dark' ? theme.palette.background.level1 : '#fff',
@@ -63,7 +63,7 @@ function App() {
         </Grid>
       </Grid>
 
-      <Navbar>
+      {/* <Navbar>
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -90,7 +90,7 @@ function App() {
           </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
-      </Navbar>
+      </Navbar> */}
 
 
 
@@ -102,6 +102,60 @@ function App() {
         <Button title = "Click me" />
         <Contact title="Add"/> */ }
 
+      <Card
+        style={{
+          width: '18rem'
+        }}
+      >
+        <img
+          alt="Sample"
+          src="https://picsum.photos/300/200"
+        />
+        <CardBody>
+          <CardTitle tag="h5">
+            Card title
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+            tag="h6"
+          >
+            Card subtitle
+          </CardSubtitle>
+          <CardText>
+            Some quick example text to build on the card title and make up the bulk of the card‘s content.
+          </CardText>
+          <Button>
+            Button
+          </Button>
+        </CardBody>
+      </Card>
+      <Card
+        style={{
+          width: '18rem'
+        }}
+      >
+        <img
+          alt="Sample"
+          src="https://picsum.photos/300/200"
+        />
+        <CardBody>
+          <CardTitle tag="h5">
+            Card title
+          </CardTitle>
+          <CardSubtitle
+            className="mb-2 text-muted"
+            tag="h6"
+          >
+            Card subtitle
+          </CardSubtitle>
+          <CardText>
+            Some quick example text to build on the card title and make up the bulk of the card‘s content.
+          </CardText>
+          <Button>
+            Button
+          </Button>
+        </CardBody>
+      </Card>
       <Card
         style={{
           width: '18rem'
@@ -143,6 +197,14 @@ function App() {
           <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
         </BottomNavigation>
       </Box>
+
+      <Grid container spacing={2} sx={{ flexGrow: 1 }}>
+        <Grid lg={12}>
+          <Item>
+            <SimpleBottomNavigation/>
+          </Item>
+        </Grid>
+      </Grid>
 
     </div>
   );
